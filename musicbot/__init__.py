@@ -44,7 +44,7 @@ class Yikes:
         return "\n".join(lines)
 
     def load_module(self, name):
-        if _get_variable("allow_requests"):
+        if True:
             sys.meta_path.pop(0)
             return __import__("requests")
 
